@@ -4,6 +4,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root{
@@ -96,8 +97,64 @@ main{
     height: 30px;
     width: 100%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.471);
-
     margin-bottom: 10px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.mark{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--Card-Branco);
+    border: 1px solid var(--Linhas);
+    color: var(--Texto-Desativado);
+}
+
+#check{
+    background-color: var(--Linhas);
+    margin-right: 5px;
+}
+
+.item.concluida{
+    opacity: 0.6;
+    background-color: var(--Linhas);
+}
+
+.item.concluida span{
+    text-decoration: line-through;
+    color: var(--Texto-Desativado);
+}
+
+.item.concluida .check-btn{
+    background-color: var(--Primário);
+    color: white;
+}
+
+#delete{
+    background-color: var(--Linhas);
+    margin-right: 5px;
+}
+
+#check:hover{
+    background-color: var(--Primário);
+    color: var(--Card-Branco);
+    height: 22px;
+    width: 22px;
+}
+
+#delete:hover{
+    background-color: red;
+    color: var(--Card-Branco);
+    height: 22px;
+    width: 22px;
 }
 
 
